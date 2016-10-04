@@ -1,0 +1,5 @@
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\bin\Release\Server.exe.config
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\bin\Release\Server.exe
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\bin\Release\Server.pdb
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\obj\Release\Server.exe
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\obj\Release\Server.pdb

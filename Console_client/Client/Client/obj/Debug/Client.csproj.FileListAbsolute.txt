@@ -1,0 +1,6 @@
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\bin\Debug\Client.exe.config
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\bin\Debug\Client.exe
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\bin\Debug\Client.pdb
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\obj\Debug\Client.exe
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\obj\Debug\Client.pdb
+C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
