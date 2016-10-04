@@ -1,3 +1,0 @@
-﻿1>------ Сборка начата: проект: Server, Конфигурация: Release Any CPU ------
-1>  Server -> C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_server\Server\Server\bin\Release\Server.exe
-========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
