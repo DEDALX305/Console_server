@@ -1,4 +1,4 @@
-﻿// SocketClient.cs
+﻿
 using System;
 using System.Text;
 using System.Net;
@@ -27,24 +27,24 @@ namespace SocketClient
             }
         }
 
-        private string RemoveSpaces(string inputString)
-        {
-            inputString = inputString.Replace(" ", string.Empty);
-            inputString = inputString.Trim().Replace(" ", string.Empty);
-            while (inputString.Contains("(-"))
-            {
-                int pos = inputString.IndexOf("(-");
-                String s1 = inputString.Substring(pos + 1);
-                int pos2 = s1.IndexOf(")");
-                //число 
-                String s2 = s1.Substring(1, pos2 - 1);
-                String x1 = inputString.Substring(0, pos);
-                String x2 = s1.Substring(pos2 + 1);
-                inputString = x1 + "(" + s2 + " - 2 * " + s2 + ")" + x2;
-
-
-            }
-        }
+     //   private string RemoveSpaces(string inputString)
+     //   {
+     //       inputString = inputString.Replace(" ", string.Empty);
+     //       inputString = inputString.Trim().Replace(" ", string.Empty);
+     //       while (inputString.Contains("(-"))
+     //       {
+     //           int pos = inputString.IndexOf("(-");
+     //           String s1 = inputString.Substring(pos + 1);
+     //           int pos2 = s1.IndexOf(")");
+     //           //число 
+     //           String s2 = s1.Substring(1, pos2 - 1);
+     //           String x1 = inputString.Substring(0, pos);
+     //           String x2 = s1.Substring(pos2 + 1);
+     //           inputString = x1 + "(" + s2 + " - 2 * " + s2 + ")" + x2;
+     //
+     //
+     //       }
+     //   }
             static void SendMessageFromSocket(int port)
         {
             // Буфер для входящих данных
@@ -63,7 +63,26 @@ namespace SocketClient
             sender.Connect(ipEndPoint);
 
             Console.Write("Введите сообщение: ");
-            string message = Console.ReadLine();
+
+            string inputString = Console.ReadLine();
+
+
+
+            inputString = inputString.Replace(" ", string.Empty);
+            inputString = inputString.Trim().Replace(" ", string.Empty);
+            while (inputString.Contains("(-"))
+            {
+                int pos = inputString.IndexOf("(-");
+                String s1 = inputString.Substring(pos + 1);
+                int pos2 = s1.IndexOf(")");
+                //число 
+                String s2 = s1.Substring(1, pos2 - 1);
+                String x1 = inputString.Substring(0, pos);
+                String x2 = s1.Substring(pos2 + 1);
+                inputString = x1 + "(" + s2 + " - 2 * " + s2 + ")" + x2;
+            }
+
+            string message = inputString;
 
             Console.WriteLine("Сокет соединяется с {0} ", sender.RemoteEndPoint.ToString());
             byte[] msg = Encoding.UTF8.GetBytes(message);
@@ -86,3 +105,4 @@ namespace SocketClient
         }
     }
 }
+
