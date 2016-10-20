@@ -40,7 +40,7 @@ namespace SocketClient
             // Соединяем сокет с удаленной точкой
             sender.Connect(ipEndPoint);
 
-            Console.Write("Введите сообщение: ");
+            Console.Write("Введите выражение: ");
 
             string inputString = Console.ReadLine();
 

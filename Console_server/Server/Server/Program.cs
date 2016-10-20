@@ -1,5 +1,4 @@
-﻿// SocketServer.cs
-using System;
+﻿using System;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
@@ -72,7 +71,7 @@ namespace SocketServer
     }
 
     //Калькулятор
-     public   class RPN
+    public class RPN
         {
             //Метод возвращает true, если проверяемый символ - разделитель ("пробел" или "равно")
             static private bool IsDelimeter(char c)
