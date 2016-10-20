@@ -6,11 +6,8 @@ using System.Net.Sockets;
 
 namespace SocketClient
 {
-
     class Program
     {
-
-
         static void Main(string[] args)
         {
             try
@@ -26,25 +23,6 @@ namespace SocketClient
                 Console.ReadLine();
             }
         }
-
-     //   private string RemoveSpaces(string inputString)
-     //   {
-     //       inputString = inputString.Replace(" ", string.Empty);
-     //       inputString = inputString.Trim().Replace(" ", string.Empty);
-     //       while (inputString.Contains("(-"))
-     //       {
-     //           int pos = inputString.IndexOf("(-");
-     //           String s1 = inputString.Substring(pos + 1);
-     //           int pos2 = s1.IndexOf(")");
-     //           //число 
-     //           String s2 = s1.Substring(1, pos2 - 1);
-     //           String x1 = inputString.Substring(0, pos);
-     //           String x2 = s1.Substring(pos2 + 1);
-     //           inputString = x1 + "(" + s2 + " - 2 * " + s2 + ")" + x2;
-     //
-     //
-     //       }
-     //   }
             static void SendMessageFromSocket(int port)
         {
             // Буфер для входящих данных
@@ -66,8 +44,6 @@ namespace SocketClient
 
             string inputString = Console.ReadLine();
 
-
-
             inputString = inputString.Replace(" ", string.Empty);
             inputString = inputString.Trim().Replace(" ", string.Empty);
             while (inputString.Contains("(-"))
@@ -75,7 +51,6 @@ namespace SocketClient
                 int pos = inputString.IndexOf("(-");
                 String s1 = inputString.Substring(pos + 1);
                 int pos2 = s1.IndexOf(")");
-                //число 
                 String s2 = s1.Substring(1, pos2 - 1);
                 String x1 = inputString.Substring(0, pos);
                 String x2 = s1.Substring(pos2 + 1);

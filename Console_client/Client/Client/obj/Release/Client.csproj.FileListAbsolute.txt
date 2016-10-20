@@ -3,3 +3,8 @@ C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Cli
 C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\bin\Release\Client.pdb
 C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\obj\Release\Client.exe
 C:\Users\DEDAL\Desktop\GitSours\Client_server_RPN_1lab\Console_client\Client\Client\obj\Release\Client.pdb
+C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\bin\Release\Client.exe.config
+C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\obj\Release\Client.exe
+C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\obj\Release\Client.pdb
+C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\bin\Release\Client.exe
+C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\bin\Release\Client.pdb

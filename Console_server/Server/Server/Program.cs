@@ -35,7 +35,6 @@ namespace SocketServer
                     Socket handler = sListener.Accept();
                     string data = null;
 
-
                     // Мы дождались клиента, пытающегося с нами соединиться
 
                     byte[] bytes = new byte[1024];
@@ -104,13 +103,14 @@ namespace SocketServer
                     default: return 6;
                 }
             }
-            //"Входной" метод класса
             static public double Calculate(string input)
             {
                 string output = GetExpression(input); //Преобразовываем выражение в постфиксную запись
                 double result = Counting(output); //Решаем полученное выражение
+                Console.WriteLine("Постфиксная запись {0}", output);
                 return result; //Возвращаем результат
             }
+           
             static private string GetExpression(string input)
             {
                 string output = string.Empty; //Строка для хранения выражения
@@ -123,7 +123,7 @@ namespace SocketServer
                         continue; //Переходим к следующему символу
 
                     //Если символ - цифра, то считываем все число
-                    if (Char.IsDigit(input[i])) //Если цифра
+                    if (Char.IsDigit(input[i]))
                     {
                         //Читаем до разделителя или оператора, что бы получить число
                         while (!IsDelimeter(input[i]) && !IsOperator(input[i]))
@@ -139,7 +139,7 @@ namespace SocketServer
                     }
 
                     //Если символ - оператор
-                    if (IsOperator(input[i])) //Если оператор
+                    if (IsOperator(input[i])) 
                     {
                         if (input[i] == '(') //Если символ - открывающая скобка
                             operStack.Push(input[i]); //Записываем её в стек
@@ -172,10 +172,12 @@ namespace SocketServer
 
                 return output; //Возвращаем выражение в постфиксной записи
             }
+
+    //Расчет
             static private double Counting(string input)
             {
                 double result = 0; //Результат
-                Stack<double> temp = new Stack<double>(); //Dhtvtyysq стек для решения
+                Stack<double> temp = new Stack<double>(); //Временный стек для решения
 
                 for (int i = 0; i < input.Length; i++) //Для каждого символа в строке
                 {
