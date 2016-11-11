@@ -4,7 +4,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Collections.Generic;
 
-
+//Сокет это один конец двустороннего канала связи между двумя программами
+//работающими в сети. Соединяя вместе два сокета можно передавать данные между разными процессами(локальными или удаленными)
 namespace SocketServer
 {
     class Server
@@ -70,7 +71,7 @@ namespace SocketServer
         }
     }
 
-    //Калькулятор
+    //Reverse Polish Notation
     public class RPN
         {
             //Метод возвращает true, если проверяемый символ - разделитель ("пробел" или "равно")
@@ -160,7 +161,6 @@ namespace SocketServer
                                     output += operStack.Pop().ToString() + " "; //То добавляем последний оператор из стека в строку с выражением
 
                             operStack.Push(char.Parse(input[i].ToString())); //Если стек пуст, или же приоритет оператора выше - добавляем операторов на вершину стека
-
                         }
                     }
                 }
@@ -172,7 +172,7 @@ namespace SocketServer
                 return output; //Возвращаем выражение в постфиксной записи
             }
 
-    //Расчет
+            //Калькулятор
             static private double Counting(string input)
             {
                 double result = 0; //Результат
