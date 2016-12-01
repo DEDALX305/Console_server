@@ -10,3 +10,6 @@ C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\bin\Debug\Cl
 C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\obj\Debug\Client.exe
 C:\Users\Apollo\Desktop\Console_server\Console_client\Client\Client\obj\Debug\Client.pdb
+C:\Users\DEDAL\Desktop\Console_server\Console_client\Client\Client\bin\Debug\Client.exe.config
+C:\Users\DEDAL\Desktop\Console_server\Console_client\Client\Client\obj\Debug\Client.exe
+C:\Users\DEDAL\Desktop\Console_server\Console_client\Client\Client\obj\Debug\Client.pdb
